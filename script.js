@@ -6,7 +6,7 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Ayah"; // Langsung tetapkan Ayah sebagai sender
+  sender = "Ayah";  // Ganti Adam dengan Ayah
 }
 
 let footer = document.getElementById("credit");
@@ -14,8 +14,8 @@ footer.innerHTML = sender;
 footer.href = "https://www.facebook.com/IfanCyber4rt/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hai Istriku", "Ayah punya pertanyaan nih, di jawab ya?", "question").then(function () {
-    Swal.fire("Jawab yang jujur ya, jangan bohong, nanti ayah kecewa!").then(function () {
+  Swal.fire("Hai Anakku", "Ayah punya pertanyaan nih, di jawab ya?", "question").then(function () {
+    Swal.fire("Jawab yang jujur ya, jangan bohong, ayah tau!").then(function () {
       Swal.fire("Awas, ayah bisa tahu kalau kamu bohong!!", "", "error").then(function () {
 
         const {
@@ -70,7 +70,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                           })
                         })
                       } else if (result.isDenied) {
-                        Swal.fire('Jahat banget, nggak kangen sama ayah sendiri?! 😢', '', 'error').then(function () {
+                        Swal.fire('Jahat banget, nggak kangen sama Ayah sendiri?! 😢', '', 'error').then(function () {
                           Swal.fire('Yaudah deh, bye! 😔')
                         })
                       }
