@@ -4,13 +4,13 @@ const url = new URL(url_string);
 let sender;
 
 if (url.searchParams.get('by') != null) {
-  sender = url.searchParams.get('by');
+  sender = url.searchParams.get('by');  // Mendapatkan parameter 'by' dari URL
 } else {
-  sender = "Ayah"; // Ganti Adam dengan Ayah
+  sender = "Ayah"; // Default ke "Ayah" jika parameter 'by' tidak ada
 }
 
 let footer = document.getElementById("credit");
-footer.innerHTML = sender;
+footer.innerHTML = sender;  // Menampilkan nama sender di footer
 footer.href = "https://www.facebook.com/IfanCyber4rt/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
