@@ -7,16 +7,16 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Ayah";
+  sender = "Han";
 }
 
 let footer = document.getElementById("credit");
 footer.innerHTML = sender;
-footer.href = "https://www.instagram.com/adamukti/";
+footer.href = "https://www.facebook.com/HasmiQuotes";
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo istriku", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
-    Swal.fire("Jawab jujur yo!").then(function () {
+  Swal.fire("Hallo Sayangku", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
+    Swal.fire("Jawab yang jujur yo!").then(function () {
       Swal.fire("Ojo ngapusi!!", "", "error").then(function () {
 
         const {
