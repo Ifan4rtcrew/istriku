@@ -12,7 +12,7 @@ if (url.searchParams.get('by') != Han) {
 
 let footer = document.getElementById("credit");
 footer.innerHTML = sender;
-footer.href = "https://www.facebook.com/HasmiQuotes";
+footer.href = "https://www.facebook.com/IfanCyber4rt/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire("Hallo Istriku", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
